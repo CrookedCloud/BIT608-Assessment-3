@@ -48,6 +48,15 @@
         }
     </style>
 
+<?php
+    session_start();
+
+    // Check if either customer or admin is logged in
+    if (!isset($_SESSION['role']) || ($_SESSION['role'] !== 'admin' && $_SESSION['role'] !== 'customer')) {
+        header("Location: ../BIT608-AS2-SkyReekie/Login.php");
+        exit();
+    }?>
+
    <!-- JavaScript function to validate form input for correct dates -->
    <script>
         function validateForm() {
@@ -67,7 +76,7 @@
     <h1>Edit a Booking</h1>
     <!-- Navigation links to other pages -->
     <a href="../BIT608-AS2-SkyReekie/CurrentBookingsList.php" style="font-size: 20px;">[Return to bookings list]</a>
-    <a href="../BIT608-AS2-SkyReekie/HomePage.php" style="font-size: 20px;">[Return to Homepage]</a>
+    <a href="../BIT608-AS2-SkyReekie/AdminDashboard.php" style="font-size: 20px;">[Return to Dashboard]</a>
     <p><br></p>
 
     <!-- Container for the booking edit form with styles applied -->

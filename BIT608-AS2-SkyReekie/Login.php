@@ -5,7 +5,7 @@
     <title>Login</title>
 </head>
 <body>
-    <h2>Login</h2>
+    <h1>Login to continue</h1>
     <form method="post" action="login.php">
         <label>Email:</label><br>
         <input type="email" name="email" required><br><br>

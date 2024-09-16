@@ -9,6 +9,14 @@
 </head>
 
 <?php
+session_start();
+
+// Check if user is logged in and is an admin
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
+    header("Location: ../BIT608-AS2-SkyReekie/Login.php"); // Redirect to login page
+    exit();
+}
+
 // Connect to the database and check the connection
 include "config.php"; // Load database configuration variables
 $db_connection = mysqli_connect(DBHOST, DBUSER, DBPASSWORD, DBDATABASE);
@@ -45,7 +53,7 @@ $rowcount = mysqli_num_rows($result);
 
     <!-- Links to create a booking and return to homepage -->
     <a href="../BIT608-AS2-SkyReekie/CreateBooking.php" style="font-size: 20px;">[Create a Booking]</a>
-    <a href="../BIT608-AS2-SkyReekie/HomePage.php" style="font-size: 20px;">[Return to Homepage]</a>
+    <a href="../BIT608-AS2-SkyReekie/AdminDashboard.php" style="font-size: 20px;">[Return to Dashboard]</a>
     <p><br></p>
 
     <!-- Display the table of bookings -->

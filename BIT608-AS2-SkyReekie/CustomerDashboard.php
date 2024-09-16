@@ -31,7 +31,5 @@ $customer = $stmt->fetch(PDO::FETCH_ASSOC);
     <h3>Welcome, <?php echo htmlspecialchars($customer['firstname']); ?>!</h3>
     <a href="../BIT608-AS2-SkyReekie/Logout.php" style="font-size: 20px;">[Logout]</a>
     <a href="../BIT608-AS2-SkyReekie/CreateBooking.php" style="font-size: 20px;">[New Booking]</a>
-    <a href="../BIT608-AS2-SkyReekie/BookingDetails.php" style="font-size: 20px;">[Booking Details]</a>
-    <a href="../BIT608-AS2-SkyReekie/EditBooking.php" style="font-size: 20px;">[Edit Booking]</a>
     <a href="../BIT608-AS2-SkyReekie/PrivacyPolicy.php" style="font-size: 20px;">[Privacy Policy]</a>
 </body>

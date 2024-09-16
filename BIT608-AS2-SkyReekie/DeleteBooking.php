@@ -34,6 +34,15 @@
         }
     </style>
 
+<?php
+    session_start();
+
+    // Check if admin is logged in
+    if (!isset($_SESSION['role']) || ($_SESSION['role'] !== 'admin')) {
+        header("Location: ../BIT608-AS2-SkyReekie/Login.php");
+        exit();
+    }?>
+
     <!-- JavaScript function to confirm deletion -->
     <script>
         function confirmDelete() {
@@ -47,7 +56,7 @@
     
     <!-- Links to return to the bookings list and homepage -->
     <a href="../BIT608-AS2-SkyReekie/CurrentBookingsList.php" style="font-size: 20px;">[Return to bookings list]</a>
-    <a href="../BIT608-AS2-SkyReekie/HomePage.php" style="font-size: 20px;">[Return to Homepage]</a>
+    <a href="../BIT608-AS2-SkyReekie/AdminDashboard.php" style="font-size: 20px;">[Return to Dashboard]</a>
     <p><br></p>
 
     <!-- Container for the delete booking form -->

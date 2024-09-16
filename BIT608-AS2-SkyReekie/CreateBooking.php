@@ -53,6 +53,16 @@
             margin: 20px 0;
         }
     </style>
+
+    <?php
+    session_start();
+
+    // Check if either customer or admin is logged in
+    if (!isset($_SESSION['role']) || ($_SESSION['role'] !== 'admin' && $_SESSION['role'] !== 'customer')) {
+        header("Location: ../BIT608-AS2-SkyReekie/Login.php");
+        exit();
+    }?>
+
     <script>
         // JavaScript function to validate form dates
         function validateForm() {
