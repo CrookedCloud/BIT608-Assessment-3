@@ -1,4 +1,4 @@
-<!--Sky Reekie SN#3809237 BIT608 Assesment 1-->
+<!--Sky Reekie SN#3809237 BIT608 Assesment 2-->
 <!--Doctype and Language-->
 <!DOCTYPE html>
 <html lang="en">
@@ -46,8 +46,8 @@
     <h1>Delete a Booking</h1>
     
     <!-- Links to return to the bookings list and homepage -->
-    <a href="../WebProgrammingAssesment1/CurrentBookingsList.php" style="font-size: 20px;">[Return to bookings list]</a>
-    <a href="../WebProgrammingAssesment1/HomePage.php" style="font-size: 20px;">[Return to Homepage]</a>
+    <a href="../BIT608-AS2-SkyReekie/CurrentBookingsList.php" style="font-size: 20px;">[Return to bookings list]</a>
+    <a href="../BIT608-AS2-SkyReekie/HomePage.php" style="font-size: 20px;">[Return to Homepage]</a>
     <p><br></p>
 
     <!-- Container for the delete booking form -->

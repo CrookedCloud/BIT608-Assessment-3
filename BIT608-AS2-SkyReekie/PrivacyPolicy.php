@@ -1,4 +1,4 @@
-<!--Sky Reekie SN#3809237 Assesment 1-->
+<!--Sky Reekie SN#3809237 Assesment 2-->
 <!--Doctype and Language-->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@
     <h1>
         Our privacy standards
     </h1>
-    <a href="../WebProgrammingAssesment1/HomePage.php" style="font-size: 20px;">[Return to home page]</a>
+    <a href="../BIT608-AS2-SkyReekie/HomePage.php" style="font-size: 20px;">[Return to home page]</a>
     <p style="font-size: 20px;">
         Please read and reveiw our privacy policy concering the personal Information<br>
         we collect and what it is used for.<br>

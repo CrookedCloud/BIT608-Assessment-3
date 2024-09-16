@@ -1,4 +1,4 @@
-<!--Sky Reekie SN#3809237 BIT608 Assesment 1-->
+<!--Sky Reekie SN#3809237 BIT608 Assesment 2-->
 <!--Doctype and Language-->
 <!DOCTYPE html>
 <html lang="en">
@@ -44,8 +44,8 @@ $rowcount = mysqli_num_rows($result);
     <h1>Current Bookings</h1>
 
     <!-- Links to create a booking and return to homepage -->
-    <a href="../WebProgrammingAssesment1/CreateBooking.php" style="font-size: 20px;">[Create a Booking]</a>
-    <a href="../WebProgrammingAssesment1/HomePage.php" style="font-size: 20px;">[Return to Homepage]</a>
+    <a href="../BIT608-AS2-SkyReekie/CreateBooking.php" style="font-size: 20px;">[Create a Booking]</a>
+    <a href="../BIT608-AS2-SkyReekie/HomePage.php" style="font-size: 20px;">[Return to Homepage]</a>
     <p><br></p>
 
     <!-- Display the table of bookings -->
@@ -68,10 +68,10 @@ $rowcount = mysqli_num_rows($result);
                 echo '<td>' . htmlspecialchars($row['lastname']) . ', ' . htmlspecialchars($row['firstname']) . '</td>';
                 echo '<td>';
                 // Links for viewing, editing, managing reviews, and deleting bookings
-                echo '<a href="../WebProgrammingAssesment1/BookingDetails.php?id=' . htmlspecialchars($row['customerID']) . '">[View]</a> ';
-                echo '<a href="../WebProgrammingAssesment1/EditBooking.php?id=' . htmlspecialchars($row['customerID']) . '">[Edit]</a> ';
-                echo '<a href="../WebProgrammingAssesment1/ManageReviews.php?id=' . htmlspecialchars($row['customerID']) . '">[Manage Reviews]</a> ';
-                echo '<a href="../WebProgrammingAssesment1/DeleteBooking.php?id=' . htmlspecialchars($row['customerID']) . '">[Delete]</a>';
+                echo '<a href="../BIT608-AS2-SkyReekie/BookingDetails.php?id=' . htmlspecialchars($row['customerID']) . '">[View]</a> ';
+                echo '<a href="../BIT608-AS2-SkyReekie/EditBooking.php?id=' . htmlspecialchars($row['customerID']) . '">[Edit]</a> ';
+                echo '<a href="../BIT608-AS2-SkyReekie/ManageReviews.php?id=' . htmlspecialchars($row['customerID']) . '">[Manage Reviews]</a> ';
+                echo '<a href="../BIT608-AS2-SkyReekie/DeleteBooking.php?id=' . htmlspecialchars($row['customerID']) . '">[Delete]</a>';
                 echo '</td>';
                 echo '</tr>';
             }

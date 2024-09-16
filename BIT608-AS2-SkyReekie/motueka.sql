@@ -1,3 +1,4 @@
+--Sky Reekie SN#3809237 BIT608 Assesment 2--
 CREATE DATABASE IF NOT EXISTS motueka;
 USE motueka;
 
@@ -69,6 +70,8 @@ INSERT INTO customer (customerID, firstname, lastname, email, phone) VALUES
 (23, 'Alex', 'Sharp', 'alex@example.com', '1001001000'),
 (24, 'Bethany', 'Beskey', 'bethany@example.com', '1001001000');
 
+--add a new collumn for admin or customer permissions--
+ALTER TABLE customer ADD COLUMN role ENUM('admin', 'customer') NOT NULL DEFAULT 'customer';
 
 --Bookings
 DROP TABLE IF EXISTS bookings;
