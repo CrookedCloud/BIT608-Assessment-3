@@ -1,0 +1,170 @@
+/*Sky Reekie SN#3809237 BIT608 Assesment 3*/
+
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html
+{ height: 100%;}
+
+/* Global font settings */
+body, p {
+    font-family: monospace;
+    font-weight: 90;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+a, a:hover
+{ outline: none;
+text-decoration: underline;
+color: #0022ff;}
+
+a:hover
+{ text-decoration: none;
+color: rgb(0, 0, 76);}
+
+
+/* Header styling */
+header {
+    height: 150px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    min-height: 150px;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation styling */
+nav {
+    float: right;
+    line-height: 1;
+    position: relative;
+    z-index: 1000;
+}
+nav a {
+    text-decoration: underline;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 1px;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    line-height: 150px;
+}
+.mobile-menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+ul
+{ margin: 2px 0 22px 17px;}
+
+ul li
+{ list-style-type: circle;
+margin: 0 0 6px 0; 
+padding: 0 0 4px 5px;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+.centered-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.centered-content img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Styling for horizontal rule */
+.hr-line {
+    margin-top: 50px;
+    border: 0;
+    height: 100px;
+    background: linear-gradient(to right, rgba(88, 204, 98, 0.433), transparent);
+}
+
+/* Pagefooter styling */
+.pagefooter {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: Alice;
+    background: rgb(152, 152, 152);
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+body {
+    font-size: 16px;
+}
+
+header {
+    height: 80px;
+    padding: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    min-height: 100px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.mobile-menu-icon {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+}
